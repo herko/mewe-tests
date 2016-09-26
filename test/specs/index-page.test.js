@@ -28,14 +28,15 @@ describe('MeWe.com Index Page', function(){
       IndexPage.open();
       IndexPage.firstName.setValue('John');
       IndexPage.lastName.setValue('Doe');
-      IndexPage.emailPhone.setValue('john@doe.sk');
-      IndexPage.emailPhoneRepeat.setValue('john@doe.sk');
+      IndexPage.emailPhone.setValue('john32@doe.sk');
+      IndexPage.emailPhoneRepeat.setValue('john32@doe.sk');
       IndexPage.password.setValue('Som3Secr3T');
-      IndexPage.userAge.setValue('12');
+      IndexPage.userAge.setValue('12'); // if changed to >= 13, test fails
 
-      browser.element('#submit-registration').click();
+      IndexPage.submitButton.click();
+      browser.pause(3000);
 
-      expect(IndexPage.getUrl).to.not.equal('https://mewe.com/welcome#');
+      expect(IndexPage.getUrl).to.not.contain('welcome');
     });
 
   });
