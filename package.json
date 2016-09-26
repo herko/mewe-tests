@@ -1,0 +1,27 @@
+{
+  "name": "mewe_tests",
+  "version": "1.0.0",
+  "description": "Mewe tests task.",
+  "main": "test.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "keywords": [
+    "mewe",
+    "test",
+    "webdriver"
+  ],
+  "author": "Lubomir Herko",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "selenium-standalone": "^5.7.2",
+    "wdio-mocha-framework": "^0.4.3",
+    "wdio-selenium-standalone-service": "0.0.6",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.2.16"
+  },
+  "dependencies": {
+    "webdriverio": "^4.2.16"
+  }
+}
