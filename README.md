@@ -15,6 +15,6 @@ After running `npm test` command, `selenium-standalone` package will start a sta
 
 ## Further Improvements
 - make use of PhantomJS headless browser to make tests much faster, if the purpose of test is just to test functionality, not compatibility
-- perhabs make factory for user info generation, so its not always the same
+- perhaps make factory for user info generation, so its not always the same
 - when testing failing registration, add test for EnterKey press (that might submit the form too)
 - I noticed, that after `$('#registration-form').submit();` the form gets submitted but even with valid data user is not registered and is redirected to home page ( that's why I didn't use `IndexPage.registrationForm.submit();` inside specs.
