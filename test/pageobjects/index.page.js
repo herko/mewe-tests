@@ -5,12 +5,7 @@ var IndexPage= Object.create(Page, {
     return browser.getTitle(); }
   },
 
-  // forms
-  registrationForm: { get: function(){
-    return browser.element('#registration-form'); }
-  },
-
-  // form fields
+  // form inputs
   firstName: { get: function() {
     return browser.element('#reg-first-filled'); }
   },
@@ -28,6 +23,9 @@ var IndexPage= Object.create(Page, {
   },
   userAge: { get: function() {
     return browser.element('#reg-user-age'); }
+  },
+  submitButton: { get: function() {
+    return browser.element("#submit-registration"); }
   },
 
   // error container
@@ -57,12 +55,6 @@ var IndexPage= Object.create(Page, {
   open: {
     value: function() {
       Page.open.call(this, '');
-    }
-  },
-
-  submit: {
-    value: function(form) {
-      this.form.submitForm();
     }
   },
 
