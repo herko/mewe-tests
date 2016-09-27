@@ -2,6 +2,9 @@ var IndexPage = require('../pageobjects/index.page');
 var expect = require('chai').expect;
 
 describe('MeWe.com Index Page', function(){
+  before(function(){
+    browser.windowHandleSize({ width: 1024, height: 768 });
+  });
   
   it('should exist', function(){
     IndexPage.open();
