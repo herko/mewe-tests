@@ -13,7 +13,7 @@ describe('MeWe.com Privacy Page', function(){
 
   it('should render Sign Up button', function(){
     PrivacyPage.open();
-    expect(PrivacyPage.signUpButton).to.exist;
+    expect(PrivacyPage.signUpButton.state).to.equal('success');
   });
 
 });

@@ -6,7 +6,7 @@ var PrivacyPage= Object.create(Page, {
   },
 
   signUpButton: { get: function() {
-    return browser.element('a=Sign Up For Freee!'); }
+    return browser.element('a=Sign Up For Free!'); }
   },
 
   status: { get: function() {
